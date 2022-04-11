@@ -1,0 +1,15 @@
+{
+    "name":"Google AdBlocker",
+    "version":"1.0",
+    "description":"Google AdBlock",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "run_at": "document_start",
+            "all_frames": true,
+            "matches": [
+              "https://www.google.com/*"]
+            }
+        ]
+      }
