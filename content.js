@@ -2,7 +2,7 @@ let removedAds = false;
 let observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
         if (mutation.addedNodes && (mutation.addedNodes.length > 0)) {
-            let node = mutation.target.querySelector("#tads");
+            let node = mutation.target.querySelector("#bottomads,#tads,.uEierd");
             if (node) {
                 node.parentNode.removeChild(node);
                 removedAds = true;
